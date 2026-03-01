@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Quest</title>
+    <meta name="description" content="Gamificação de hábitos, combate a vícios e otimização do sono em RPG" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand__title">Habit Quest</div>
+          <div id="phaseBadge" class="phase-badge" aria-live="polite"></div>
+        </div>
+
+        <div class="topbar__right">
+          <button id="themeToggle" class="btn btn--ghost" type="button" aria-label="Alternar tema">Tema</button>
+        </div>
+      </header>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__item" href="#/dashboard" data-route="dashboard">Dashboard</a>
+        <a class="nav__item" href="#/tasks" data-route="tasks">Tarefas</a>
+        <a class="nav__item" href="#/habits" data-route="habits">Hábitos</a>
+        <a class="nav__item" href="#/addictions" data-route="addictions">Anti-vício</a>
+        <a class="nav__item" href="#/sleep" data-route="sleep">Sono</a>
+        <a class="nav__item" href="#/analytics" data-route="analytics">Análise</a>
+        <a class="nav__item" href="#/studies" data-route="studies">Estudos</a>
+        <a class="nav__item" href="#/settings" data-route="settings">Config</a>
+      </nav>
+
+      <main id="view" class="view" role="main"></main>
+
+      <div id="toastHost" class="toast-host" aria-live="polite" aria-relevant="additions"></div>
+      <div id="modalHost" class="modal-host" aria-live="polite"></div>
+    </div>
+
+    <script type="module" src="app.js?v=4"></script>
+  </body>
+</html>
